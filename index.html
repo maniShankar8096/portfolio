@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script defer src="script.js"></script>
+    <title>React App</title>
+  </head>
+  <body>
+    <!--home section-->
+    <div
+      class="home-container d-flex flex-column justify-content-center"
+      id="home"
+    >
+      <h1 class="home-heading">
+        Hello, I am <span class="home-myName">Mani Sankar</span>.
+      </h1>
+      <h1 class="home-heading">I am a Front-end Web Developer.</h1>
+      <button class="home-myButton">
+        View my Work
+        <i class="bi bi-arrow-right home-iconArrow"></i>
+      </button>
+    </div>
+    <!--navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand"> MS. </span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto pr-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home"> HOME </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio"> PORTFOLIO </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> ABOUT </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> CONTACT </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--portfolio section-->
+    <div id="portfolio">
+      <h1 class="pf-heading">PROJECTS</h1>
+      <div class="pf-heading-bar"></div>
+      <div class="projects-container d-flex flex-row justify-content-center">
+        <div class="card project-card">
+          <div class="card-img-top project-img"></div>
+          <div class="card-img-top project-img-text">
+            <h1>Todo</h1>
+            <p class="project-img-text-lan">JavaScript</p>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">ToDo Web Application</h5>
+            <p class="card-text">
+              A todo application with features like creating a task,deleting a
+              task, marking a task complete and autosave.
+            </p>
+            <a
+              href="https://manishankar8096.github.io/ToDo/"
+              target="_blank"
+              class="btn btn-info"
+              >Visit Todo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--About section-->
+    <div id="about">
+      <h1 class="about-heading">ABOUT</h1>
+      <div class="about-heading-bar"></div>
+      <div class="container">
+        <div class="row">
+          <div class="about-text col-12 col-md-6">
+            <img
+              class="about-image"
+              src="images/profile-img1.jpg"
+              alt="A person typing"
+            />
+            <h1 class="about-text-heading">Who am I?</h1>
+            <p class="about-text-descr">
+              I am a Systems Engineer at Infosys Ltd. Hyderabad for past 1.5
+              years. I have serious passion for creating and developing
+              functional and user-friendly web applications.
+            </p>
+          </div>
+          <div class="about-skils col-12 col-md-6">
+            <div class="row">
+              <div class="col-4 col-md-6">
+                <div class="skill-card">
+                  <img
+                    class="skill-card-img"
+                    src="images/portfolio-skills-html-img.png"
+                  />
+                  <h1 class="skill-card-heading">HTML</h1>
+                </div>
+              </div>
+              <div class="col-4 col-md-6">
+                <div class="skill-card">
+                  <img
+                    class="skill-card-img"
+                    src="images/portfolio-skills-css-img.png"
+                  />
+                  <h1 class="skill-card-heading">CSS</h1>
+                </div>
+              </div>
+              <div class="col-4 col-md-6">
+                <div class="skill-card">
+                  <img
+                    class="skill-card-img"
+                    src="images/portfolio-skills-bootstrap-img.png"
+                  />
+                  <h1 class="skill-card-heading">Bootstrap</h1>
+                </div>
+              </div>
+              <div class="col-4 col-md-6">
+                <div class="skill-card">
+                  <img
+                    class="skill-card-img"
+                    src="images/portfolio-skills-js-img.png"
+                  />
+                  <h1 class="skill-card-heading">JavaScript</h1>
+                </div>
+              </div>
+              <div class="col-4 col-md-6">
+                <div class="skill-card">
+                  <img
+                    class="skill-card-img"
+                    src="images/portfolio-skills-es6-img.png"
+                  />
+                  <h1 class="skill-card-heading">ES6</h1>
+                </div>
+              </div>
+              <div class="col-4 col-md-6">
+                <div class="skill-card">
+                  <img
+                    class="skill-card-img"
+                    src="images/portfolio-skills-react-img-min.png"
+                  />
+                  <h1 class="skill-card-heading">React</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact Section-->
+    <div id="contact">
+      <div class="container">
+        <h1 class="contact-heading">CONTACT</h1>
+        <div class="contact-heading-bar"></div>
+        <p class="contact-text">Want to know more about me?</p>
+        <div class="row">
+          <div class="col-12 col-md-4 text-center">
+            <p class="contact--main">
+              <i class="bi bi-person-fill b-icon"></i>Mani Sankar
+            </p>
+            <p class="contact-sub">
+              <i class="bi bi-layers-fill b-icon"></i>FrontEnd Developer
+            </p>
+            <div class="ct-line d-md-none"></div>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <p class="contact--main">Phone Number</p>
+            <p class="contact-sub">
+              <i class="bi bi-phone-fill b-icon"></i>91-8096024005
+            </p>
+            <div class="ct-line d-md-none"></div>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <p class="contact--main">Email</p>
+            <p class="contact-sub">
+              <i class="bi bi-envelope-fill b-icon"></i
+              >manishankar9988@gmail.com
+            </p>
+            <div class="ct-line d-md-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="ft-container d-flex flex-column justify-content-center">
+        <div>
+          <a
+            href="https://www.linkedin.com/in/mani-shankar-75027b187/"
+            target="_blank"
+            ><i class="bi bi-linkedin f-icon"></i
+          ></a>
+          <a href="https://github.com/maniShankar8096" target="_blank"
+            ><i class="bi bi-github f-icon"></i
+          ></a>
+        </div>
+        <p class="ft-text">
+          MANI SANKAR <span class="ft-highlight">&copy; 2021</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
