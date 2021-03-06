@@ -23,6 +23,7 @@ window.addEventListener("scroll", (e) => {
   let curPos = window.scrollY;
   Array.from(navLinks).forEach((link) => {
     let section = document.querySelector(link.getAttribute("href"));
+    curPos += 5;
     if (
       section.offsetTop <= curPos &&
       section.offsetTop + section.offsetHeight > curPos
