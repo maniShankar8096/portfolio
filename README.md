@@ -1,2 +1,3 @@
 # portfolio
-my portfolio website
+
+My portfolio website which depicts my skills and other things about me.
