@@ -91,13 +91,32 @@ nav .active {
   border-radius: 0.7rem !important;
   position: relative;
 }
-.project-img {
+
+.project-img-waves {
+  height: 200px;
+  background: url("images/waves-appl-min1-min.jpg") center center/cover;
+  border-radius: 0.7rem !important;
+  transition: opacity 0.6s;
+  z-index: 2;
+}
+
+.project-img-crypto {
+  height: 200px;
+  background: url("images/cryptoverse-appl-min-min.jpg") center center/cover;
+  /* border-radius: 0.7rem !important; */
+  transition: opacity 0.6s;
+  z-index: 2;
+}
+
+.project-img-todo {
   height: 200px;
   background: url("images/ToDo-appl-min.png") center center/cover;
   border-radius: 0.7rem !important;
   transition: opacity 0.6s;
   z-index: 2;
 }
+
+
 .project-img:hover {
   opacity: 0.15;
 }
